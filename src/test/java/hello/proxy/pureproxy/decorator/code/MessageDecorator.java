@@ -20,5 +20,11 @@ public class MessageDecorator implements Component {
 
         return decoResult;
     }
+}
+abstract class Decorator implements Component{
+    private Component component;
 
+    public Decorator(Component component) {
+        this.component = component;
+    }
 }
